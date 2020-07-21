@@ -7,7 +7,7 @@ Hub](https://hub.docker.com/r/tkralphs/cylp/). To use,
 simply install Docker (see instructions below) and then do
 
 ```
-docker pull tkralphs/cylp
+docker pull coinor/cylp
 ```
 
 This retrieves a docker image containing CyLP. Once
@@ -18,7 +18,7 @@ the files in to the container, then copy the results back out. To do this,
 first create and start a container, as follows:
 
 ```
-docker create --name=cylp -it tkralphs/cylp
+docker create --name=cylp -it coinor/cylp
 docker start cylp
 ```
 
@@ -32,7 +32,7 @@ Here, we are copying into the `/tmp` directory inside the container. Finally,
 execute a solver command.
 
 ```
-docker run tkralphs/cylp /tmp/myscript.py > /tmp/output
+docker run coinor/cylp /tmp/myscript.py > /tmp/output
 ```
 
 and finally, copy the output back out
@@ -51,7 +51,7 @@ much of a risk inside a docker container, since it can be recreated easily.
 Just clone the repository and build the docker image by
 
 ```
-git clone https://github.com/tkralphs/cylp-docker
+git clone https://github.com/coin-or-tools/cylp-docker
 cd cylp-docker
 sudo docker build -t cylp image/
 ```
@@ -66,7 +66,7 @@ built-in virtualization, the instructions my be different). From a Powershell
 terminal clone the repository and build the docker image by the commands
 
 ```
-git clone https://github.com/tkralphs/cylp-docker
+git clone https://github.com/coin-or-tools/cylp-docker
 cd cylp-docker
 docker build -t cylp image/
 ```
@@ -118,7 +118,7 @@ eval "$(docker-machine env default)"
 Now follow instructions as above for building the container
 
 ```
-git clone https://github.com/tkralphs/cylp
+git clone https://github.com/coin-or-tools/cylp
 cd cylp
 docker build -t cylp image/
 ```
