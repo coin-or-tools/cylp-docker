@@ -3,7 +3,7 @@ This is a Docker image containing an installed version of CyLP.
 # Install and Use From Docker Hub
 
 This image is now on [Docker
-Hub](https://hub.docker.com/r/tkralphs/cylp/). To use,
+Hub](https://hub.docker.com/r/coinor/cylp/). To use,
 simply install Docker (see instructions below) and then do
 
 ```
