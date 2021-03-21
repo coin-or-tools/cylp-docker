@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 ARG DEBIAN_FRONTEND="noninteractive"
 ENV TZ="America/New_York"
+RUN apt-get update
 RUN apt-get -y install unzip git gcc g++ gfortran make wget file pkg-config
 RUN apt-get -y install python3 python3-pip 
 RUN apt-get -y install libblas-dev liblapack-dev
