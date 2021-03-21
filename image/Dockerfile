@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-RUN RUN DEBIAN_FRONTEND="noninteractive"
+ENV DEBIAN_FRONTEND="noninteractive"
 RUN apt-get -y install unzip git gcc g++ gfortran make wget file pkg-config
 RUN apt-get -y install python3 python3-pip 
 RUN apt-get -y install libblas-dev liblapack-dev
