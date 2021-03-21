@@ -5,7 +5,7 @@ ARG DEBIAN_FRONTEND="noninteractive"
 ENV TZ="America/New_York"
 RUN apt-get update
 RUN apt-get -y install --no-install-recommends unzip git gcc g++ gfortran make wget file pkg-config
-RUN apt-get -y install --no-install-recommends python3 python3-pip 
+RUN apt-get -y install --no-install-recommends python3 python3-pip python3-dev
 RUN apt-get -y install --no-install-recommends libblas-dev liblapack-dev
 
 RUN git clone https://github.com/coin-or/coinbrew /var/cbc
